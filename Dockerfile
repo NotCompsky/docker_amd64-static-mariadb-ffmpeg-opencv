@@ -1,5 +1,5 @@
-FROM notcompsky/static-wangle-ffmpeg:latest
-ARG OPENCV_VERSION=4.4.0
+FROM notcompsky/amd64-static-mariadb-ffmpeg:latest
+ARG OPENCV_VERSION=4.5.0
 RUN git clone --depth 1 https://github.com/glennrp/libpng \
 	&& mkdir libpng/build \
 	&& cp /usr/local/include/zlib/*.h libpng/ \
